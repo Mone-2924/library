@@ -1,0 +1,136 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+ /* будьте очень внимательны  */
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style: none;
+}
+.wrapper{
+    width: 1349px;
+    margin: 0 auto;
+    background-color: #263344;
+}
+nav{
+    background-color: #E5E5E5; 
+    /* когда у нас код цвета перед кодом всатвляем # а когда просто название 
+    цвета на анг (например RED) без  */
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 4px;
+}
+.menu a{
+    padding: 20px 30px;
+    font-weight: bold;
+    color: #1F2A38;
+    font-size: 18px;
+}
+.menu a:hover{
+   background-color: #BA523B;
+   color: #fff;
+   padding: 22px 30px;
+}
+.main-block{
+    display: flex;
+    justify-content: space-evenly;
+}
+.main-block_categories{
+    margin-left: 20px;
+}
+.main-block_categories p{
+    font-family: 'Syne Tactile', cursive;
+
+    font-size: 20px;
+    color: #fff;
+    padding: 15px 0px;
+    letter-spacing: 0.2em;
+}
+.categories{
+    border-radius: 20px;
+    background-color: #E5E5E5; 
+}
+.categories li{
+    padding: 17px;
+    width: 300px;
+    border: 1px solid #000;
+}
+.top-border{
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 20px 20px 0px 0px;
+}
+.buttom-border{
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.main-text p{
+    font-size: 20px;
+    color: #fff;
+    padding: 15px 0px;
+    letter-spacing: 0.2em;
+}
+.main-block_content{
+    display: flex;
+    background-color: #E5E5E5; 
+    padding: 25px 40px;
+    border-radius: 20px;
+}
+.content{
+    margin: 0px 15px;
+    width: 180px;
+}
+.content img{
+    width: 180px;
+}
+.photo{
+    width: 180px;
+    height: 282px;
+    background-image: url(../img/лягуш.png);
+    background-size: 100%;
+    transition: 3s;
+}
+.photo:hover{
+    background-image: url(../img/чел_поступ.png);
+    background-size: 100%;
+}
+.avtor p{
+    color: rgb(51, 50, 50);
+}
+.bгtton-Buy a{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-color: rgb(0, 80, 155);
+    color: rgb(253, 253, 253);
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 20px;
+    animation-name: shake;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+
+
+}
+
+@keyframes shake{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        background: rgb(20,56,0);
+        background: linear-gradient(270deg, rgba(20,56,0,1) 0%, rgba(122,222,36,1) 35%, rgba(117,195,49,1) 51%, rgba(20,56,0,1) 100%);
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(10deg);
+    }
+}
